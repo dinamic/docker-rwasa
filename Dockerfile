@@ -4,7 +4,7 @@
 FROM alpine AS builder
 
 ENV FASM_VERSION 1.73.04
-ENV HEAVYTHING_VERSION 1.23
+ENV HEAVYTHING_VERSION 1.24
 
 RUN apk --update --no-cache add binutils curl && \
 	curl -sL "https://flatassembler.net/fasm-$FASM_VERSION.tgz" | tar xz && \
